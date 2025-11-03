@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "libhmap",
+  "version": "0.1.0",
+  "description": "standard library for the cyberintern's Hyper Media Application Platform (HMAP) workgroup, part of the WWW workgroup",
+  "keywords": [
+    "hypermedia",
+    "www",
+    "web"
+  ],
+  "author": "cyberintern",
+  "license": "LGPL-2.1-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberintern-org/libhmap.git"
+  },
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "(lib|src|test)/**/*.(js|ts)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0"
+  }
+}
