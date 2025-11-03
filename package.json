@@ -22,7 +22,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "(lib|src|test)/**/*.(js|ts)": [
+    "(lib|src|test)/**/*.(js|mjs)": [
       "eslint --fix",
       "prettier --write --ignore-unknown"
     ]
